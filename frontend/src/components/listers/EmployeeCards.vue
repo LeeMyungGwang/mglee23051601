@@ -71,7 +71,7 @@
                 'userId': 0,
                 'departmentId': {},
                 'rankId': {},
-                'employeeUser': {},
+                'employeeUser': [],
             }
         },
         methods:{

@@ -6,4 +6,7 @@ import javax.persistence.*;
 import lombok.Data;
 
 @Data
-public class DepartmentViewQuery {}
+public class DepartmentViewQuery {
+
+    String name;
+}

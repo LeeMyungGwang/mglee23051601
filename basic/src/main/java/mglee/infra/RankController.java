@@ -24,6 +24,6 @@ public class RankController {
 
     @PutMapping("/ranks/search/")
     public Object (@RequestBody RankViewQuery query){
-        return rankRepository.();
+        return rankRepository.(query.getName());
     }
 }

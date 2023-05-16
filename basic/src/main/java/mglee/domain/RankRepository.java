@@ -8,5 +8,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel="ranks", path="ranks")
 public interface RankRepository extends PagingAndSortingRepository<Rank, Long>{
-  List<Rank> ();
+  List<Rank> (String name);
 }

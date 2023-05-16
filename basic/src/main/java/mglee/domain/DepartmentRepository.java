@@ -8,5 +8,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel="departments", path="departments")
 public interface DepartmentRepository extends PagingAndSortingRepository<Department, Long>{
-  List<Department> ();
+  List<Department> (String name);
 }

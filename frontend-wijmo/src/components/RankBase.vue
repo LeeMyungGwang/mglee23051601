@@ -73,7 +73,7 @@
                 } 
                 var temp = null;
                 if(query!=null){
-                    temp = await axios.put(axios.fixUrl('/ranks/search/'), {  });
+                    temp = await axios.put(axios.fixUrl('/ranks/search/'), { name: query.parameters.name });
                     me.values = await me.processData(temp.data);
                 }else{
                     temp = await axios.get(axios.fixUrl('/ranks'))
