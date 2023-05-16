@@ -85,7 +85,7 @@
                 } 
                 var temp = null;
                 if(query!=null){
-                    temp = await axios.put(axios.fixUrl('/employees/search/findByUserId'), {  });
+                    temp = await axios.put(axios.fixUrl('/employees/search/findByUserId'), { userId: query.parameters.userId });
                     me.values = await me.processData(temp.data);
                 }else{
                     temp = await axios.get(axios.fixUrl('/employees'))

@@ -8,5 +8,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(collectionResourceRel = "employees", path = "employees")
 public interface EmployeeRepository
     extends PagingAndSortingRepository<Employee, Long> {
-    List<Employee> findByUserId();
+    List<Employee> findByUserId(String userId);
 }

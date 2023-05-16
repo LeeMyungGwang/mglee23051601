@@ -20,6 +20,6 @@ public class EmployeeController {
 
     @PutMapping("/employees/search/findByUserId")
     public Object findByUserId(@RequestBody EmployeeViewQuery query) {
-        return employeeRepository.findByUserId();
+        return employeeRepository.findByUserId(query.getUserId());
     }
 }

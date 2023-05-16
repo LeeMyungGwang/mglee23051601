@@ -6,4 +6,7 @@ import javax.persistence.*;
 import lombok.Data;
 
 @Data
-public class EmployeeViewQuery {}
+public class EmployeeViewQuery {
+
+    String userId;
+}

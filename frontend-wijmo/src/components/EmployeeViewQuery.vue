@@ -6,6 +6,9 @@
     
         <v-card-text>
             <v-row no-gutters style="margin: 15px 0px -30px -15px;">
+                <v-col style="max-width:140px;">
+                    <String class="attributes-list" label="UserId" v-model="value.parameters.userId" :editMode="editMode"/>
+                </v-col>
                 <v-col>
                     <v-btn class="gs-query-search-btn"
                         @click="search"
@@ -33,13 +36,14 @@
             },
         }),
         created() {
+            this.value.parameters.userId = '';
         },
         watch: {
         },
         methods: {
             search() {
                 let search = null;
-                if() {
+                if(this.value.parameters.userId == '' ) {
                     search = null;
                 }else{
                     search = this.value;
